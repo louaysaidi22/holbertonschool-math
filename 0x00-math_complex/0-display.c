@@ -12,12 +12,12 @@ void display_complex_number(complex c)
 	if (a == 0 && b == 0)
 		printf("0\n");
 	else if (b == 0)
-		printf("%g\n", a);
+		printf("%.17g\n", a);
 	else if (a == 0)
-		printf("%gi\n", b);
+		printf("%.17gi\n", b);
 	else if (b > 0)
-		printf("%g + %gi\n", a, b);
+		printf("%.17g + %.17gi\n", a, b);
 	else if (b < 0)
-		printf("%g - %gi\n", a, -b);
+		printf("%.17g - %.17gi\n", a, -b);
 
 }
